@@ -1,0 +1,51 @@
+[
+  {
+    "id": "price_1PM0gPSJ5g5s01ylr0p8YpLq",
+    "name": "Acoustic Guitar",
+    "description": "A beautiful dreadnought acoustic guitar with a rich, warm tone. Perfect for beginners and seasoned players alike.",
+    "price": 19900,
+    "imageUrl": "https://images.pexels.com/photos/164829/pexels-photo-164829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0hDSJ5g5s01ylWfD2Qf4h",
+    "name": "Electric Keyboard",
+    "description": "61-key portable electronic keyboard with built-in speakers and hundreds of sounds. Includes stand and power adapter.",
+    "price": 24900,
+    "imageUrl": "https://images.pexels.com/photos/164743/pexels-photo-164743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0hWSJ5g5s01yl7p1eYf9g",
+    "name": "Professional Microphone",
+    "description": "Studio-quality condenser microphone ideal for recording vocals, podcasts, and instruments. Crystal clear audio capture.",
+    "price": 12900,
+    "imageUrl": "https://images.pexels.com/photos/110355/pexels-photo-110355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0i1SJ5g5s01ylN6l3oF5f",
+    "name": "Vinyl Record Player",
+    "description": "Classic belt-drive turntable with a vintage look and modern features, including Bluetooth connectivity.",
+    "price": 17500,
+    "imageUrl": "https://images.pexels.com/photos/668353/pexels-photo-668353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0iKSJ5g5s01ylQ8k9jB7a",
+    "name": "Drum Pad Machine",
+    "description": "Compact and portable drum machine with 16 velocity-sensitive pads. Perfect for creating beats on the go.",
+    "price": 14900,
+    "imageUrl": "https://images.pexels.com/photos/7615570/pexels-photo-7615570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0iaSJ5g5s01ylaP0gK4fC",
+    "name": "Studio Headphones",
+    "description": "Over-ear, closed-back headphones designed for monitoring and critical listening. Excellent noise isolation.",
+    "price": 9900,
+    "imageUrl": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "id": "price_1PM0ivSJ5g5s01ylm5p9H2gR",
+    "name": "Ukulele Starter Kit",
+    "description": "Fun and easy-to-play soprano ukulele. Comes with a gig bag, tuner, and extra strings. Great for all ages.",
+    "price": 5900,
+    "imageUrl": "https://images.pexels.com/photos/4089427/pexels-photo-4089427.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  }
+]

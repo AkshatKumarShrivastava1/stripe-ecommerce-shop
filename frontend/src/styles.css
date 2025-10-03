@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root {
+  --primary-color: #0d1b2a;
+  --secondary-color: #415a77;
+  --accent-color: #3a86ff;
+  --bg-color: #f8f9fa;
+  --card-bg-color: #ffffff;
+  --text-color: #1b263b;
+  --light-text-color: #778da9;
+  --border-color: #e0e1dd;
+  --success-color: #2a9d8f;
+  --error-color: #e76f51;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 3rem;
+  font-weight: 700;
+  
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  color: transparent;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+}
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.cart h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cart-icon-wrapper {
+  position: relative; 
+}
+
+.cart-icon {
+  color: var(--primary-color);
+}
+
+.cart-badge {
+  position: absolute; 
+  top: -8px;
+  right: -12px;
+  
+  background-color: var(--error-color); 
+  color: white;
+  
+  border-radius: 50%; 
+  width: 24px;
+  height: 24px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 14px;
+  font-weight: 700;
+  
+  border: 2px solid var(--card-bg-color); 
+  
+ 
+  animation: pop 0.3s ease-out;
+}
+
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.products h2, .cart h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.card p {
+  flex-grow: 1;
+  color: var(--light-text-color);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* === CART STYLES === */
+.cart {
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+.cart-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+.price-small {
+  font-size: 0.9rem;
+  color: var(--light-text-color);
+}
+
+/* === BUTTONS & FORMS === */
+button, .button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button:hover, .button:hover {
+  background: #2a75e8;
+  transform: scale(1.02);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: var(--secondary-color);
+  transform: none;
+}
+
+button.added {
+  background-color: var(--success-color);
+}
+
+.remove-btn {
+  background: var(--error-color);
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  width: auto;
+}
+.remove-btn:hover {
+  background: #d05d42;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input[type=email]:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(58, 134, 255, 0.2);
+}
+
+/* === CENTERED PAGES (Success/Canceled) === */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.centered .card {
+  max-width: 500px;
+}
+
+.centered h2 {
+  font-size: 2rem;
+}
+
+.centered .button {
+  margin-top: 1.5rem;
+}
+
+/* Add these new styles to your existing CSS file */
+
+.product-image {
+  width: 100%;
+  height: 200px; /* Gives all images a consistent height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 12px 12px 0 0; /* Rounds the top corners */
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  /* Remove padding from the card itself */
+  padding: 0;
+  /* Add this to ensure content stays within the rounded corners */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+/* === CLASSIC TITLE WITH SUBTITLE === */
+h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+h1 span {
+  display: block; /* Make the span appear on a new line */
+  font-size: 1.1rem; /* Smaller font size */
+  font-weight: 400; /* Lighter font weight */
+  color: var(--light-text-color);
+  margin-top: 0.5rem;
+}

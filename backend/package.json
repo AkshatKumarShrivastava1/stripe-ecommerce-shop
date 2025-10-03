@@ -1,0 +1,17 @@
+{
+  "name": "stripe-checkout-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "stripe": "^12.16.0"
+  }
+}
